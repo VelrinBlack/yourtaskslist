@@ -1,5 +1,7 @@
 <?php
 
+require 'Connect/Connect.php';
+
 session_start();
 
 if (isset($_COOKIE['login']) && !$_SESSION['logged_out']) {
@@ -29,6 +31,9 @@ if ($link === false) {
 
 $data = "SELECT * FROM users";
 $table = mysqli_query($link, $data);
+
+$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+$server = $url["host"];
 
 
 if (isset($_POST['submit'])) {
