@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;700&display=swap");
+body {
+  height: 100vh;
+  background-color: #2f3337;
+  overflow-y: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+form {
+  position: relative;
+  width: 30vw;
+  height: 80vh;
+  background-color: white;
+  margin-top: 7vh;
+  border: 5px solid #d69d01;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 0 10px 0px black;
+          box-shadow: inset 0 0 10px 0px black;
+}
+
+form h1 {
+  margin-top: 75px;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+form .error {
+  position: absolute;
+  margin: -20px auto 0 auto;
+  width: 100%;
+  color: red;
+  font-size: 15px;
+}
+
+form .login_div,
+form .pass_div {
+  width: 70%;
+}
+
+form .login_div .login,
+form .login_div .pass,
+form .pass_div .login,
+form .pass_div .pass {
+  width: 100%;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+form .submit_btn {
+  margin-top: 20px;
+  width: 50%;
+  height: 40px;
+  border: none;
+  background-color: #d69d01;
+  color: white;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 20px;
+  border-radius: 4px;
+}
+
+form .txt {
+  width: 20vw;
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+form a {
+  color: black;
+  font-weight: 800;
+}
+
+form .checkbox_label {
+  width: 30%;
+  margin: 30px 0 50px 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;700&display=swap");
+body {
+  width: 100vw;
+  background-color: #2f3337;
+  text-align: center;
+}
+
+body h1 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 50px;
+  color: #fff;
+  margin: 0;
+}
+
+body .log_out_button_form .log_out_button {
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 20px;
+  background-color: #d69d01;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #fff;
+}
+
+body .add_task_page_btn_form .add_task_page_btn {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  background-color: #fff;
+}
+
+body .add_task_page_btn_form .add_task_page_btn:hover {
+  background-color: #fff;
+}
+
+body .add_task_page_btn_form .add_task_page_btn .add_task_button_cross {
+  color: #000;
+}
+
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .task {
+  position: relative;
+  height: 100px;
+  width: 50vw;
+  margin: -30px 0 70px 0;
+  background-color: rgba(214, 157, 1, 0.1);
+  border: 4px solid #d69d01;
+  border-radius: 20px;
+}
+
+body main .task .task_title {
+  color: #000;
+  font-size: 25px;
+  margin: 5px;
+}
+
+body main .task .task_description {
+  color: #e9e9e9;
+  font-size: 19px;
+}
+
+body main .task form {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+body main .task form input {
+  width: 50vw;
+  height: 100px;
+  border: none;
+  border-radius: 20px;
+  background-color: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+
+body main .shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+body main .add_task_window {
+  position: absolute;
+  top: calc(50vh + 0px);
+  left: 50vw;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 30vw;
+  height: 700px;
+  border-radius: 5px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main .add_task_window .close_add_task_window_form {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  z-index: 4;
+}
+
+body main .add_task_window .close_add_task_window_form .close_add_task_window_input {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../../img/cross.png");
+  background-size: 30px 30px;
+  cursor: pointer;
+}
+
+body main .add_task_window .close_add_task_window_form .close_add_task_window_input:focus {
+  outline: 0;
+}
+
+body main .add_task_window .add_task_form {
+  position: relative;
+  top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .add_task_window .add_task_form .add_task_form_title {
+  color: #000;
+  margin-top: 20px;
+  width: 100%;
+}
+
+body main .add_task_window .add_task_form .add_task_btn {
+  width: 110px;
+  height: 40px;
+  margin-top: 50px;
+  background-color: #d69d01;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #fff;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+body main .add_task_window .add_task_form .add_task_btn:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  background-color: #e7fefc;
+}
+
+body main .add_task_window .add_task_form .add_task_btn:focus {
+  outline: 0;
+}
+
+body footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #d69d01;
+}
+
+body footer p {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  line-height: 50px;
+  font-size: 15px;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #fff;
+}
+
+body footer p a {
+  color: #fff;
+}
+/*# sourceMappingURL=home_page.css.map */

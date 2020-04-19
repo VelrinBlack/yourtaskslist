@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;700&display=swap");
+
+$first: #d69d01;
+
+body {
+  width: 100vw;
+
+  background-color: #2f3337;
+  text-align: center;
+
+  h1 {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 50px;
+    color: #fff;
+    margin: 0;
+  }
+
+  .log_out_button_form {
+    .log_out_button {
+      width: 100px;
+      height: 30px;
+
+      border: none;
+      border-radius: 20px;
+      background-color: $first;
+
+      font-family: "Montserrat Alternates", sans-serif;
+      color: #fff;
+    }
+  }
+
+  .add_task_page_btn_form {
+    .add_task_page_btn {
+      margin-top: 50px;
+      margin-bottom: 100px;
+
+      background-color: #fff;
+
+      &:hover {
+        background-color: #fff;
+      }
+
+      .add_task_button_cross {
+        color: #000;
+      }
+    }
+  }
+
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    .task {
+      position: relative;
+
+      height: 100px;
+      width: 50vw;
+
+      margin: -30px 0 70px 0;
+      background-color: rgba($color: $first, $alpha: 0.1);
+      border: 4px solid $first;
+      border-radius: 20px;
+
+      .task_title {
+        color: #000;
+        font-size: 25px;
+        margin: 5px;
+      }
+
+      .task_description {
+        color: #e9e9e9;
+        font-size: 19px;
+      }
+
+      form {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        input {
+          width: 50vw;
+          height: 100px;
+          border: none;
+          border-radius: 20px;
+          background-color: transparent;
+
+          color: transparent;
+
+          cursor: pointer;
+        }
+      }
+    }
+
+
+
+
+    .shadow {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 100%;
+      height: 100%;
+
+      background-color: rgba($color: #000000, $alpha: 0.5);
+    }
+
+    .add_task_window {
+      position: absolute;
+      top: calc(50vh + 0px);
+      left: 50vw;
+
+      transform: translate(-50%, -50%);
+
+      width: 30vw;
+      height: 700px;
+
+      border-radius: 5px;
+      background-color: #fff;
+
+      display: flex;
+      flex-direction: column;
+
+      .close_add_task_window_form {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        z-index: 4;
+
+        .close_add_task_window_input {
+          width: 30px;
+          height: 30px;
+
+          border: none;
+          background-color: transparent;
+          background-image: url("../../img/cross.png");
+          background-size: 30px 30px;
+
+          cursor: pointer;
+
+          &:focus {
+            outline: 0;
+          }
+        }
+      }
+
+      .add_task_form {
+        position: relative;
+        top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .add_task_form_title {
+          color: #000;
+          margin-top: 20px;
+          width: 100%;
+        }
+
+        .add_task_btn {
+          width: 110px;
+          height: 40px;
+
+          margin-top: 50px;
+
+          background-color: $first;
+
+          border: none;
+          border-radius: 25px;
+
+          font-weight: bold;
+
+          font-family: "Montserrat Alternates", sans-serif;
+          color: #fff;
+
+          transition: all 0.5s;
+
+          &:hover {
+            transform: scale(1.03);
+            background-color: #e7fefc;
+          }
+
+          &:focus {
+            outline: 0;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+
+    width: 100%;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+
+    background-color: $first;
+
+    p {
+      position: absolute;
+      bottom: 0;
+
+      margin: 0;
+
+      line-height: 50px;
+      font-size: 15px;
+      font-family: "Montserrat Alternates", sans-serif;
+      color: #fff;
+
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
